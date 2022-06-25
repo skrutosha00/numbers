@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa-Black.ttf");
+}
+
+body {
+  background-image: url("../png/back.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 360px;
+
+  font-family: "Nexa";
+  font-style: normal;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green {
+  font-size: 2vw;
+  background: linear-gradient(180deg, #a6da69 0%, #45830c 100%);
+  box-shadow: 0px 0px 3px 2px rgba(83, 219, 0, 0.51);
+  border-radius: 5px;
+}
+
+.balance_field {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+
+  width: 150px;
+  height: 30px;
+
+  font-size: 2.5vw;
+  background: linear-gradient(
+    180deg,
+    #060604 0%,
+    #070705 18.02%,
+    #212023 71.15%,
+    #212023 100%
+  );
+  border-radius: 6px;
+}
+
+.balance_field img {
+  max-height: 80%;
+  margin-right: 20px;
+}
+
+@media screen and (min-height:600px) {
+  .balance_field {
+    width: 250px;
+    height: 50px;
+  }
+}

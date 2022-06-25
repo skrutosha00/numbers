@@ -1,0 +1,455 @@
+.warning {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+
+  width: 240px;
+  height: 310px;
+
+  font-size: 3vw;
+
+  background-image: url("../png/warning.png");
+  background-position: center;
+  background-size: contain;
+
+  transition: left 1.5s ease;
+}
+
+.reward {
+  position: absolute;
+  top: 48.5%;
+  transform: translateY(-50%);
+
+  width: 100%;
+}
+
+.again {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 50%;
+  height: 10%;
+
+  background: linear-gradient(180deg, #a6da69 0%, #45830c 100%);
+  box-shadow: 0px 0px 3px 2px rgba(83, 219, 0, 0.51);
+  border-radius: 5px;
+}
+
+.stars {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: 30%;
+}
+
+.coins {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: 45%;
+}
+
+.roulette {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+
+  width: 350px;
+  height: 190px;
+}
+
+.r_top {
+  position: absolute;
+  top: 0;
+  left: 51%;
+  z-index: 2;
+  transform: translateX(-50%);
+
+  height: 42%;
+}
+
+.r_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 80%;
+}
+
+.ball {
+  position: absolute;
+  left: 21%;
+  top: 41.5%;
+
+  width: 4.571%;
+  height: 8.421%;
+
+  border-radius: 50%;
+  background: radial-gradient(
+    43.18% 52.27% at 31.82% 25%,
+    #ffe7b9 0.31%,
+    #e8a72a 100%
+  );
+  box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25),
+    inset 0px -2px 5px rgba(36, 36, 36, 0.43),
+    inset 2px 4px 5px rgba(255, 255, 255, 0.68),
+    inset 0px -4px 5px rgba(0, 0, 0, 0.17);
+
+  transition: transform 0.1s linear;
+}
+
+.last_cont_cont {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 40%;
+  height: 15%;
+
+  font-size: 2.5vw;
+  background: linear-gradient(
+    180deg,
+    #333333 0%,
+    #2b2b2b 18.02%,
+    #1f2121 53.96%,
+    #0b0e0d 100%
+  );
+  box-shadow: 0px 1px 3px #000000, inset 0px 3px 2px rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+}
+
+.last_cont {
+  display: flex;
+  justify-content: space-between;
+
+  width: 80%;
+  height: 50%;
+}
+
+.last {
+  width: 10%;
+  height: 100%;
+
+  font-size: 2vw;
+  background: linear-gradient(
+    180deg,
+    #e8eaea 0%,
+    #d0d2d2 23.75%,
+    #b4b6b8 53.96%,
+    #a1a3a5 100%
+  );
+  box-shadow: 0px 1px 3px #000000, inset 0px 3px 2px rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+}
+
+.field {
+  position: absolute;
+  right: 3%;
+
+  width: 40%;
+  height: 23%;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  font-size: 2vw;
+  border: 1px solid #969696;
+  box-shadow: inset 0px 2px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.f_top {
+  top: 30%;
+  background: #705f7b;
+}
+
+.f_bottom {
+  top: 58%;
+  background: #775f7b;
+}
+
+.cell {
+  height: calc(50% - 2px);
+  width: calc(20% - 2px);
+
+  border: 1px solid #969696;
+  border-radius: 11px;
+}
+
+.f_top_cell {
+  background: linear-gradient(180deg, #555369 0%, #615067 47.19%, #504365 100%);
+}
+
+.f_bottom_cell {
+  background: linear-gradient(180deg, #313a8f 0%, #712f88 100%);
+}
+
+.inner_cell {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #969696;
+  border-radius: 11px;
+  transition: opacity 0.5s ease;
+}
+
+.f_top_inner_cell {
+  background: linear-gradient(
+    113.46deg,
+    #c99cdf 0%,
+    #301259 33.24%,
+    #5d4f7b 93.03%
+  );
+}
+
+.f_bottom_inner_cell {
+  background: linear-gradient(180deg, #732081 0%, #58217a 100%);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 55px;
+
+  font-size: 2vw;
+  background: linear-gradient(
+    180deg,
+    #272727 0%,
+    #3d3d3d 31.04%,
+    #4e4e4e 39.9%,
+    #333333 58.65%,
+    #000000 100%
+  );
+}
+
+.control {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 25%;
+  height: 100%;
+}
+
+.bet_amount_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  width: calc(100% - 80px);
+
+  background: linear-gradient(
+    180deg,
+    #333333 0%,
+    #2b2b2b 18.02%,
+    #1f2121 53.96%,
+    #0b0e0d 100%
+  );
+  box-shadow: 0px 0.679012px 2.03704px #000000,
+    inset 0px 2.03704px 1.35802px rgba(255, 255, 255, 0.32);
+  border-radius: 8.82716px;
+}
+
+.bet_amount {
+  width: 90%;
+
+  background: linear-gradient(180deg, #b7bebe 0%, #9fadb1 100%);
+  border-radius: 4px;
+}
+
+.plus,
+.minus {
+  width: 35px;
+  height: 35px;
+
+  font-size: 3vw;
+  background: radial-gradient(
+    75% 75% at 23.86% 19.32%,
+    #cbd0d3 41.98%,
+    #657581 100%
+  );
+  border-radius: 50%;
+}
+
+.spin_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background: radial-gradient(
+    71.31% 71.31% at 34.43% 28.69%,
+    #80a61a 0%,
+    #1e3203 100%
+  );
+}
+
+.spin_button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.spin {
+  right: 5%;
+}
+
+.auto {
+  right: 15%;
+}
+
+.auto_option_cont {
+  position: absolute;
+  right: 10%;
+  bottom: -60%;
+  z-index: 4;
+
+  width: 15%;
+  height: 50%;
+  max-height: 300px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  background: #1a220b;
+  box-shadow: 0px 0px 5px 5px #232b1c;
+  border-radius: 7px;
+
+  transition: bottom 0.5s ease;
+}
+
+.auto_option {
+  height: 20%;
+  max-height: 60px;
+  width: 80%;
+
+  background: linear-gradient(180deg, #a6da69 0%, #45830c 100%);
+  box-shadow: 0px 0px 3px 2px rgba(83, 219, 0, 0.51);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  .roulette {
+    width: 245px;
+    height: 133px;
+  }
+
+  .ball {
+    width: 11.2px;
+    height: 11.2px;
+  }
+
+  .field,
+  .last_cont_cont {
+    width: 50%;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .roulette {
+    width: 455px;
+    height: 247px;
+  }
+
+  .ball {
+    width: 20.8px;
+    height: 20.8px;
+  }
+
+  .field {
+    height: 15%;
+  }
+
+  .last_cont_cont {
+    height: 12%;
+  }
+
+  .footer {
+    height: 90px;
+  }
+
+  .control {
+    width: 30%;
+  }
+
+  .spin_button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .spin_button img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .warning {
+    width: 480px;
+    height: 620px;
+  }
+
+  .last_cont_cont {
+    height: 10%;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .control {
+    width: 40%;
+  }
+
+  .minus,
+  .plus {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bet_amount_cont {
+    width: calc(100% - 180px);
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .roulette {
+    width: 665px;
+    height: 361px;
+  }
+
+  .ball {
+    width: 30.4px;
+    height: 30.4px;
+  }
+}

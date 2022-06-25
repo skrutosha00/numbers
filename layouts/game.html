@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="../png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>Put Number</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="warning">
+        <img src="../png/stars.png" alt="stars" class="stars"/>
+        <img src="../png/coins.png" alt="coins" class="coins"/>
+        <div class="reward">0</div>
+        <div class="again block">Ok</div>
+      </div>
+
+      <div class="auto_option_cont"></div>
+
+      <div class="balance_field block"></div>
+
+      <div class="roulette">
+        <img src="../png/top.png" alt="top" class="r_top" />
+        <img src="../png/bottom.png" alt="bottom" class="r_bottom" />
+        <div class="ball"></div>
+      </div>
+
+      <div class="last_cont_cont">
+        <div>Last Numbers</div>
+        <div class="last_cont"></div>
+      </div>
+
+      <div class="f_top field"></div>
+      <div class="f_bottom field"></div>
+
+      <div class="footer">
+        <div class="control">
+          <div class="minus block">-</div>
+          <div class="bet_amount_cont">
+            <div>BET</div>
+            <div class="bet_amount">0</div>
+          </div>
+          <div class="plus block">+</div>
+        </div>
+        <div class="spin_button block auto">
+          <img src="../png/spin.png" alt="spin" />
+          <div>Auto</div>
+        </div>
+        <div class="spin_button block spin">
+          <img src="../png/spin.png" alt="spin" />
+          <div>Spin</div>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/game.js" type="module"></script>
+  </body>
+</html>

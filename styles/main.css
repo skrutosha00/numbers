@@ -1,0 +1,39 @@
+.play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 50%;
+}
+
+.play img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.avatar_cont {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  font-size: 2.5vw;
+}
+
+.avatar_cont img {
+  max-height: 100%;
+  margin-right: 20px;
+}
+
+@media screen and (min-height: 800px) {
+  .avatar_cont {
+    height: 100px;
+  }
+}
+
+
