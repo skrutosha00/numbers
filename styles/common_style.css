@@ -76,7 +76,7 @@ a {
   margin-right: 20px;
 }
 
-@media screen and (min-height:600px) {
+@media screen and (min-height: 600px) {
   .balance_field {
     width: 250px;
     height: 50px;

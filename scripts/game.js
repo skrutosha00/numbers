@@ -205,10 +205,17 @@ function rotate() {
 function gameOver(win) {
     if (win) {
         let reward = Math.round(Number(betAmount.innerHTML) * 30)
+
+        warning.classList.add('win')
         warning.querySelector('.reward').innerHTML = reward
+        warning.querySelector('.result').classList.add('hidden')
+
         changeBalance(reward)
     } else {
+        warning.classList.remove('win')
+
         warning.querySelector('.reward').innerHTML = 0
+        warning.querySelector('.result').classList.remove('hidden')
     }
 
     warning.style.left = '50%'

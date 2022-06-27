@@ -10,11 +10,22 @@
 
   font-size: 3vw;
 
-  background-image: url("../png/warning.png");
+  background-image: url("../png/frame_red.png");
   background-position: center;
   background-size: contain;
 
   transition: left 1.5s ease;
+}
+
+.warning.win {
+  background-image: url("../png/warning.png");
+}
+
+.result {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
 }
 
 .reward {

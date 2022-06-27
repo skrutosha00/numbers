@@ -18,10 +18,12 @@
 
 .avatar {
   width: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .chosen {
-  filter: brightness(150%);
+  outline: springgreen 5px solid;
 }
 
 input {
